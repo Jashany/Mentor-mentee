@@ -1,0 +1,98 @@
+.main {
+    background: #f2fafa;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 5rem;
+    flex-direction: column;
+    padding-inline: 10%;
+    gap: 60px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+    
+  .logo {
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #004d91;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .header button {
+    border-radius: 50px;
+    background: #1e88e5;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: normal;
+
+  }
+
+  .body{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .body input{
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .body label{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .body h3{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .formGroup{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .body button{
+    border-radius: 5px;
+    background: #1e88e5;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: normal;
+  }
