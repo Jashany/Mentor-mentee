@@ -5,15 +5,20 @@ import './App.css'
 import {Routes, Route} from 'react-router-dom'
 import MentorSignup from './Pages/Signup/Mentor/MentorSignup'
 import StudentSignUp from './Pages/Signup/Student/StudentSignup'
+import GlobalChat from './components/GlobalChat/GlobalChat'
+import { WebSocketProvider } from './hooks/useSocket'
 
 function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/mentorsignup" element={<MentorSignup />} />
-        <Route path="/studentsignup" element={<StudentSignUp />} />
-      </Routes>
+      <WebSocketProvider>
+        <Routes>
+          <Route path="/mentorsignup" element={<MentorSignup />} />
+          <Route path="/studentsignup" element={<StudentSignUp />} />
+          <Route path="/comp" element={<GlobalChat />} />
+        </Routes>
+      </WebSocketProvider>
     </>
   )
 }
